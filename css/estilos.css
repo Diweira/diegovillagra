@@ -1,0 +1,309 @@
+/** rgb(32, 97, 135)  azul del logo**/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'fira sans', sans-serif;
+}
+.contenedor{
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+header{
+  width: 100%;
+  height: 200px;
+}
+.logo{
+  padding: 25px 0px;
+  margin-right: 20px;
+}
+.logo img{
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin:auto;
+}
+.menu a{
+  text-decoration: none;
+  color: rgb(32, 97, 135);
+  font-size: 14px;
+}
+.menu a:hover{
+  color: #42b2bf
+}
+.banner{
+  width: 100%;
+  height: 550px;
+  background-image: url(../img/diego.svg);
+  background-position: center;
+  background-size: cover;
+}
+.banner > div{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(209, 219, 189, 0.5);
+}
+.curriculum{
+  width: 1200px;
+  max-width: 1400px;
+  max-height: 650px;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+.cviz{
+  background-color: rgb(32, 97, 135);
+  width: 100%;
+  max-width: 350px;
+  padding-left: 10PX;
+  height: 100%;
+  padding-right: 10px;
+  display: inline-block;
+}
+.cvde{
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto;
+  margin-left: 50px;
+  position: absolute;
+  padding-left: 100PX;
+  display: inline-block;
+}
+.cv{
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  margin-top: 2px;
+}
+.cv p{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.cv h2{
+  font-size: 35px;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 450px;
+}
+
+.perfil h3{
+  padding-top: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+#cviz { color: white
+}
+#titulo { color: rgb(32, 97, 135)
+}
+
+.perfill i{
+  display: inline-block;
+  vertical-align: middle;
+}
+.perfill h3{
+  display: inline-block;
+  color: white;
+}
+.perfill{
+  margin-bottom: 10px;
+}
+.perfil2{
+  margin-bottom: 20px;
+}
+.correo img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.correo p{
+  display: inline-block;
+}
+.correo{
+  margin-bottom: 40px;
+}
+.estudio{
+  margin-bottom: 10px;
+}
+.media{
+  margin-bottom: 5px;
+}
+.ingenieria{
+  margin-bottom: 15px;
+}
+.estudio img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.estudio h3{
+  display: inline-block;
+}
+.experiencia1 img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.experiencia1 h3{
+  display: inline-block;
+}
+.experiencia1{
+  margin-bottom: 10px;
+}
+.petrizzio{
+  margin: 20px 0;
+}
+.petrizzio h4{
+  margin-bottom: 5px;
+}
+.cursos{
+  max-width: 600px;
+  margin: auto;
+}
+.progress-bar {
+  background-color: #1a1a1a;
+  height: 25px;
+  padding: 5px;
+  width: 250px;
+  margin: 15px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+.progress-bar span {
+  display: inline-block;
+  height: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+  transition: width .4s ease-in-out;
+  background-color: #ccc;
+}
+.blue span {
+  background-color: #206187;
+}
+.stripes span {
+  background-size: 30px 30px;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@keyframes animate-stripes {
+  0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+.shine span {
+  position: relative;
+}
+.shine span::after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 3px;
+  animation: animate-shine 2s ease-out infinite;
+}
+
+@keyframes animate-shine {
+  0% {opacity: 0; width: 0;}
+  50% {opacity: .5;}
+  100% {opacity: 0; width: 95%;}
+}
+.glow span {
+  box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;
+  animation: animate-glow 1s ease-out infinite;
+}
+
+@keyframes animate-glow {
+  0% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+  50% { box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;}
+  100% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+}
+
+.foot {
+  width: 1200px;
+  max-width: 1400px;
+  max-height: 650px;
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.hab {
+  background-color: rgb(32, 97, 135);
+  width: 100%;
+  max-width: 350px;
+  padding-left: 10PX;
+  height: 680px;
+  padding-right: 10px;
+  display: inline-block;
+  color: white;
+}
+.hab p{
+  margin-left: 10px;
+}
+.apt i{
+  display: inline-block;
+  vertical-align: middle;
+}
+.apt h3{
+  display: inline-block;
+  color: white;
+}
+.apt{
+  margin: 15px 0;
+}
+.cursos {
+  max-width: 600px;
+  width: 100%;
+  margin: 0px auto;
+  margin-left: 50px;
+  position: absolute;
+  padding-left: 100PX;
+  display: inline-block;
+}
+.curso2 img{
+  display: inline-block;
+  vertical-align: middle;
+}
+.curso2 h3{
+  display: inline-block;
+}
+.cursos2 {
+  margin-bottom: 20px;
+}
+.widget{
+  margin: 15px 0;
+}
+.footer {
+  text-align: center;
+  height: 25px;
+  background-color: rgb(32, 97, 135);
+  padding: 1px;
+  color: white;
+}
+.icono {
+  font-size: 30px;
+  margin-right: 15px;
+  margin-left: 5px;
+  color: white;
+}
+.icono1 {
+  font-size:35px;
+  color: rgb(32, 97, 135);
+  margin-left: 5px;
+  margin-right: 15px;
+}
